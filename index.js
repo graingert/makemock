@@ -2,6 +2,7 @@
 
 var has = require('lodash.has');
 var set = require('lodash.set');
+var find = require('lodash.find');
 
 var UnverifiedCallException = function () {
   function UnverifiedCallException(path) {
@@ -59,7 +60,7 @@ var Mock = function () {
   };
 
   Mock.prototype.verify = function verify() {
-    var unverified = this._called.find(function (item) {
+    var unverified = find(this._called, function (item) {
       return !item.verified;
     });
     if (unverified) {

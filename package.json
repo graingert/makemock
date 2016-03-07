@@ -1,6 +1,6 @@
 {
   "name": "makemock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A mock object factory",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/graingert/makemock#readme",
   "dependencies": {
+    "lodash.find": "^4.2.0",
     "lodash.has": "^4.2.1",
     "lodash.set": "^4.0.0"
   }
